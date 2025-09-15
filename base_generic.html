@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% block title %}<title>Local Library</title>{% endblock %}
+</head>
+
+<body>
+  {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+  {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Local Library Home</h1>
+  <p>
+    Welcome to <em>LocalLibrary</em>, a very basic Django website developed as a
+    tutorial example on the Mozilla Developer Network.
+  </p>
+{% endblock %}
+</body>
+</html>
