@@ -1,8 +1,9 @@
 1 клонировать
 git clone https://github.com/emimagomerzaev987/simpleLibrary.git
 2 создать виртуальное окружение
-python -m venv venv
-python .venv\Scripts\activate
+pip install virtualenv
+python -m virtualenv
+venv\Scripts\activate.bat
 pip install -r requirements.txt
 3 выполнить миграции
 python manage.py makemigrations
@@ -11,6 +12,8 @@ python manage.py migrate
 python manage.py runserver 
 5 запустить
 python manage.py runserver 
+
+
 
 
 
